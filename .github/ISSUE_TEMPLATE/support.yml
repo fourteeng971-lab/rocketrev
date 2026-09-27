@@ -1,0 +1,27 @@
+name: Help with Rocket Rev
+description: Report a problem or ask a question about the game.
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Please don't include personal information such as your email, Apple Account or purchase receipts."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What were you doing, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: iPad Air (M2), iOS 26.3
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown at the bottom of the game's Settings (gear button).
+      placeholder: "1.0 (2)"
